@@ -239,3 +239,43 @@ body {
   color: #2e363e;
   max-width: 166px;
 }
+
+/* test */
+
+.test {
+  padding: 200px 0;
+}
+.list {
+}
+.item {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.item::before {
+  content: "";
+  display: block;
+  border-radius: 14px;
+  width: 35px;
+  height: 35px;
+  background-image: url(../images/tick.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 16px 12px;
+}
+
+.item:nth-child(1)::before {
+  background-color: #f90;
+}
+
+.item:nth-child(2)::before {
+  background-color: #f03e3d;
+}
+
+.item:nth-child(3)::before {
+  background-color: #4d8dff;
+}
+.item:not(:last-child) {
+  margin-bottom: 34px;
+}
