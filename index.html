@@ -4,47 +4,47 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
-      rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      rel="stylesheet"
       integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:slnt,wght@400;500;600;700&family=Montserrat:ital,wght@0,900;1,900&family=Poppins&family=Reem+Kufi&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link href="./css/styles.css" rel="stylesheet" />
     <title>World.net - home internet for you</title>
   </head>
 
   <body>
     <header class="header">
       <div class="container header-container">
-        <a href="./index.html" class="header-logo">World.Net</a>
+        <a class="header-logo" href="./index.html">World.Net</a>
         <nav class="header-nav">
           <ul class="header-nav-list">
             <li class="header-nav-item">
-              <a href="./index.html" class="header-nav-link">Home</a>
+              <a class="header-nav-link" href="./index.html">Home</a>
             </li>
             <li class="header-nav-item">
-              <a href="#about" class="header-nav-link">About</a>
+              <a class="header-nav-link" href="#about">About</a>
             </li>
             <li class="header-nav-item">
-              <a href="#feedback" class="header-nav-link">Reviews</a>
+              <a class="header-nav-link" href="#feedback">Reviews</a>
             </li>
             <li class="header-nav-item">
-              <a href="./tarifs.html" class="header-nav-link">Tarrifs</a>
+              <a class="header-nav-link" href="./tarifs.html">Tarrifs</a>
             </li>
             <li class="header-nav-item">
-              <a href="" class="header-nav-link">Contacts</a>
+              <a class="header-nav-link" href>Contacts</a>
             </li>
           </ul>
         </nav>
         <address class="header-address">
-          <a href="tel:88006549732" class="header-address-link"
+          <a class="header-address-link" href="tel:88006549732"
             >8 (800) 654-97-32</a
           >
         </address>
@@ -60,7 +60,7 @@
               We work only in small towns. Thanks to this, we maintain quality
               and we will not spray
             </p>
-            <button class="hero-btn" type="button">
+            <button class="hero-btn" type="button" data-modal-open>
               Submit your application
             </button>
           </div>
@@ -134,19 +134,23 @@
           <div class="about-box">
             <h2 class="about-title">We will connect today or next day</h2>
             <p class="about-text">
-              Our coverage area is much smaller than that of large providers. This
-              allows us to work quickly: 64% of subscribers receive Internet and TV
-              immediately on the day of application. Even if you need to connect a
-              private house, not an apartment.
+              Our coverage area is much smaller than that of large providers.
+              This allows us to work quickly: 64% of subscribers receive
+              Internet and TV immediately on the day of application. Even if you
+              need to connect a private house, not an apartment.
             </p>
             <ul class="about-list">
               <li class="about-item">
                 <h3 class="about-item-title">14 536</h3>
-                <p class="about-title-text">Active subscribers throughout the region</p>
+                <p class="about-title-text">
+                  Active subscribers throughout the region
+                </p>
               </li>
               <li class="about-item">
                 <h3 class="about-item-title">4,91</h3>
-                <p class="about-title-text">Average quality score for home Internet and TV</p>
+                <p class="about-title-text">
+                  Average quality score for home Internet and TV
+                </p>
               </li>
             </ul>
           </div>
@@ -250,7 +254,7 @@
       <a href="./index.html">World.Net</a>
       <ul>
         <li>
-          <a href="#" target="_blank" aria-label="instagram link"
+          <a href="#" aria-label="instagram link" target="_blank"
             ><img
               src="./images/instagram.svg"
               alt="instagram"
@@ -259,7 +263,7 @@
           /></a>
         </li>
         <li>
-          <a href="#" target="_blank" aria-label="facebook link"
+          <a href="#" aria-label="facebook link" target="_blank"
             ><img
               src="./images/facebook.svg"
               alt="facebook"
@@ -268,7 +272,7 @@
           /></a>
         </li>
         <li>
-          <a href="#" target="_blank" aria-label="whatsapp link"
+          <a href="#" aria-label="whatsapp link" target="_blank"
             ><img
               src="./images/whatsapp.svg"
               alt="whatsapp"
@@ -279,5 +283,47 @@
       </ul>
       <a href="tel:88006549732">8 (800) 654-97-32</a>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal-close-btn" type="button" data-modal-close>
+          x
+        </button>
+        <p class="modal-subtitle">Contact Us</p>
+        <p class="modal-title">
+          <span class="modal-title-part">Contact</span> Us & We Can Work
+          Together
+        </p>
+        <p class="modal-text">
+          Lorem ipsum dolor sit amet consectetur. Adipiscing nisl id at arcu
+          enim id gravida pulvinar. Tristique consectetur mi curabitur congue
+          enim dignissim
+        </p>
+        <form class="modal-form">
+          <label class="modal-label"
+            ><input
+              class="modal-input"
+              name="user-name"
+              type="text"
+              placeholder="Your Name"
+              required /></label
+          ><label class="modal-label"
+            ><input
+              class="modal-input"
+              name="user-email"
+              type="email"
+              placeholder="Your Email"
+              required /></label
+          ><label class="modal-message-label">
+            <textarea
+              class="modal-message"
+              name="user-message"
+              placeholder="Your Message"
+            ></textarea>
+          </label>
+          <button class="modal-btn" type="submit">Submit Message</button>
+        </form>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
