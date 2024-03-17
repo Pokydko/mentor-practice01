@@ -60,7 +60,7 @@
               We work only in small towns. Thanks to this, we maintain quality
               and we will not spray
             </p>
-            <button class="hero-btn" type="button" data-modal-open>
+            <button class="hero-btn" data-modal-open type="button">
               Submit your application
             </button>
           </div>
@@ -157,95 +157,120 @@
         </div>
       </section>
       <!-- section 4 -->
-      <section id="feedback">
-        <p>Customer Feedback</p>
-        <h2>What Our Customers Say About Us</h2>
-        <ul>
-          <li>
-            <img
-              src="./images/customer.svg"
-              alt="customer"
-              width="98"
-              height="98"
-            />
-            <h3>Name Here</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur. Nisi ullamcorper tincidunt
-              odio arcu id praesent vitae. Facilisis vitae fringilla donec
-            </p>
-          </li>
-          <li>
-            <img
-              src="./images/customer.svg"
-              alt="customer"
-              width="98"
-              height="98"
-            />
-            <h3>Name Here</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur. Nisi ullamcorper tincidunt
-              odio arcu id praesent vitae. Facilisis vitae fringilla donec
-            </p>
-          </li>
-          <li>
-            <img
-              src="./images/customer.svg"
-              alt="customer"
-              width="98"
-              height="98"
-            />
-            <h3>Name Here</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur. Nisi ullamcorper tincidunt
-              odio arcu id praesent vitae. Facilisis vitae fringilla donec
-            </p>
-          </li>
-        </ul>
+      <section class="feedback-section section" id="feedback">
+        <div class="container">
+          <p class="description-feedback">Customer Feedback</p>
+          <h2 class="feedback-title">What Our Customers Say About Us</h2>
+          <ul class="feedback-list">
+            <li class="feedback-item">
+              <img
+                class="feedback-list-img"
+                src="./images/customer.svg"
+                alt="customer"
+                width="98"
+                height="98"
+              />
+              <h3 class="feedback-title-name">Name Here</h3>
+              <p class="feedback-name-description">
+                Lorem ipsum dolor sit amet consectetur. Nisi ullamcorper
+                tincidunt odio arcu id praesent vitae. Facilisis vitae fringilla
+                donec
+              </p>
+            </li>
+            <li class="feedback-item">
+              <img
+                class="feedback-list-img"
+                src="./images/customer.svg"
+                alt="customer"
+                width="98"
+                height="98"
+              />
+              <h3 class="feedback-title-name">Name Here</h3>
+              <p class="feedback-name-description">
+                Lorem ipsum dolor sit amet consectetur. Nisi ullamcorper
+                tincidunt odio arcu id praesent vitae. Facilisis vitae fringilla
+                donec
+              </p>
+            </li>
+            <li class="feedback-item">
+              <img
+                class="feedback-list-img"
+                src="./images/customer.svg"
+                alt="customer"
+                width="98"
+                height="98"
+              />
+              <h3 class="feedback-title-name">Name Here</h3>
+              <p class="feedback-name-description">
+                Lorem ipsum dolor sit amet consectetur. Nisi ullamcorper
+                tincidunt odio arcu id praesent vitae. Facilisis vitae fringilla
+                donec
+              </p>
+            </li>
+          </ul>
+        </div>
       </section>
       <!-- section 5 -->
-      <section>
-        <h2>Tarrifs</h2>
-        <ul>
-          <li>
-            <img
-              src="./images/standart.svg"
-              alt="standart"
-              width="248"
-              height="228"
-            />
-            <h3>Standart</h3>
-            <h4>$20/month</h4>
-            <p>The connection is always stable</p>
-            <p>Speed of 100 Mbit / s</p>
-            <button type="button">Make a request</button>
-          </li>
-          <li>
-            <img
-              src="./images/smart.svg"
-              alt="smart"
-              width="248"
-              height="228"
-            />
-            <h3>Smart</h3>
-            <h4>$30/month</h4>
-            <p>Service without weekends</p>
-            <p>Speed of 300 Mbit / s</p>
-            <button type="button">Make a request</button>
-          </li>
-          <li>
-            <img
-              src="./images/prime.svg"
-              alt="prime"
-              width="248"
-              height="228"
-            />
-            <h3>Prime</h3>
-            <h4>$40/month</h4>
-            <p>New modern fiber optic network</p>
-            <p>Speed of 1000 Mbit / s</p>
-            <button type="button">Make a request</button>
-          </li>
-        </ul>
+      <section class="tarrifs-section section">
+        <div class="container">
+          <h2 class="visually-hidden">Tarrifs</h2>
+          <ul class="tarrifs-list">
+            <li class="tarrifs-item">
+              <img
+                class="tarrifs-img"
+                src="./images/standart.svg"
+                alt="standart"
+                width="248"
+                height="228"
+              />
+              <div class="tarrifs-wrap">
+                <h3 class="tarrifs-title">Standart</h3>
+                <h4 class="tarrifs-price">$20/month</h4>
+              </div>
+              <p class="tarrifs-description">The connection is always stable</p>
+              <p class="tarrifs-description-speed">
+                Speed of <span class="tarrifs-speed">100</span> Mbit / s
+              </p>
+              <button class="tarrifs-btn" type="button">Make a request</button>
+            </li>
+            <li class="tarrifs-item">
+              <img
+                class="tarrifs-img"
+                src="./images/smart.svg"
+                alt="smart"
+                width="248"
+                height="228"
+              />
+              <div class="tarrifs-wrap">
+                <h3 class="tarrifs-title">Smart</h3>
+                <h4 class="tarrifs-price">$30/month</h4>
+              </div>
+              <p class="tarrifs-description">Service without weekends</p>
+              <p class="tarrifs-description-speed">
+                Speed of <span class="tarrifs-speed">300</span> Mbit / s
+              </p>
+              <button class="tarrifs-btn" type="button">Make a request</button>
+            </li>
+            <li class="tarrifs-item">
+              <img
+                class="tarrifs-img"
+                src="./images/prime.svg"
+                alt="prime"
+                width="248"
+                height="228"
+              />
+              <div class="tarrifs-wrap">
+                <h3 class="tarrifs-title">Prime</h3>
+                <h4 class="tarrifs-price">$40/month</h4>
+              </div>
+              <p class="tarrifs-description">New modern fiber optic network</p>
+              <p class="tarrifs-description-speed">
+                Speed of <span class="tarrifs-speed">1000</span> Mbit / s
+              </p>
+              <button class="tarrifs-btn" type="button">Make a request</button>
+            </li>
+          </ul>
+        </div>
       </section>
       <!-- section 6 -->
       <section></section>
@@ -285,7 +310,7 @@
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button class="modal-close-btn" type="button" data-modal-close>
+        <button class="modal-close-btn" data-modal-close type="button">
           x
         </button>
         <p class="modal-subtitle">Contact Us</p>
